@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+
+  padding: 50px 0;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  letter-spacing: 0.1em;
+
+  color: white;
+  background: linear-gradient(rgb(47,150,163), rgb(48,62,143));
+
+}
+
+:root {
+  --red: tomato;
+  --blue: aqua;
+}
+
+.max-temp,
+.min-temp {
+  display: flex;
+}
+
+.max-temp h3,
+.min-temp h3,
+.pop h3 {
+  padding-right: 3px;
+}
+
+.max-temp {
+  color: var(--red);
+  justify-content: flex-end;
+}
+.min-temp {
+  color: var(--blue);
+  justify-content: flex-end;
+}
+
+.pop {
+  color: gainsboro;
+}
+
+.pop {
+  display: flex;
+}
+
+.today,
+.weekly {
+  height: 50%;
+  width: 90%;
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
+
+
+/* today */
+.today {
+  margin-bottom: 50px;
+}
+
+.location {
+  margin-bottom: 20px;
+}
+
+.today .weather-icon img {
+  width: 200px;
+}
+
+.today-weather-detail {
+  display: flex;
+  justify-content: center;
+}
+
+.today-temp,
+.today-pop {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.today-temp {
+  justify-content: flex-end;
+  margin-right: 30px;
+}
+
+.temp-icon,
+.pop-icon {
+  display: flex;
+  align-items: center;
+}
+
+.temp-icon img {
+  width: 80px;
+}
+
+.max,
+.min {
+  text-align: right;
+}
+
+.max-min {
+  margin-right: 10px;
+}
+
+.max-min-temp p {
+  font-size: 14px;
+}
+
+.max {
+  margin-bottom: 10px;
+}
+
+.today .max-temp {
+  margin-bottom: 10px;
+}
+
+.pop-icon img {
+  width: 80px;
+}
+
+
+
+/* weekly */
+.weekly-title {
+  margin-bottom: 20px;
+}
+
+.weekly-box {
+  display: flex;
+}
+
+.weekly-weather {
+  width: calc(100% / 7);
+}
+
+.weekly-weather-box {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.weekly-weather-detail {
+  width: 40%;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.weekly-weather .weather-icon img {
+  width: 100px;
+}
+
+.weekly-weather-detail .max-temp,
+.weekly-weather-detail .min-temp,
+.weekly-weather-detail .pop {
+  justify-content: flex-end;
+}
+
+
+
+
+
+/* body {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  background: linear-gradient(rgb(47,150,163), rgb(48,62,143));
+
+  font-family: sans-serif;
+  color: white;
+}
+
+.location,
+.temperature {
+  height: 30vh;
+  width: 50%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.temperature {
+  flex-direction: column;
+}
+
+.degree-section {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.degree-section span {
+  margin: 10px;
+  font-size: 30px;
+}
+
+.degree-section h2 {
+  font-size: 40px;
+}
+
+.location img {
+  width: 120px;
+} */
